@@ -1,0 +1,55 @@
+$main: lighten(#7f00ff, 10%);
+
+body {
+  font-family: 'Droid Serif', serif;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.brand-color {
+  color: $main;
+}
+
+.top-margin {
+  margin-top: 174px;
+}
+
+@import './_header.scss';
+
+
+.info {
+  margin-top: 14px;
+  margin-left: 5px;
+  color: $main;
+  font-size: 16px;
+
+}
+
+
+
+.form-close {
+  cursor: pointer;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.contact-form {
+  display: block;
+  z-index: 10000;
+  background-color: $main;
+  border: 2px solid $main;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  width: 340px;
+  padding: 15px;
+  color: #fff;
+
+  button {
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,141 @@
+
+// ########################
+//    HEADER
+// ########################
+
+.header {
+
+  margin-top: 25px;
+
+  .header__col {
+
+    .info__row {
+
+      color: $main;
+
+      margin-bottom: 15px;
+      &:last-child {
+        margin-bottom: 5px;
+      }
+
+      &__slogan {
+
+      }
+
+      &__phone {
+        margin-left: 8px;
+        font-size: 18px;
+      }
+
+      &__email {
+        margin-left: 8px;
+        font-size: 18px;
+
+        a {
+          color: $main;
+        }
+      }
+
+    }
+  }
+
+  .form-open {
+    float: right;
+    font-size: 25px;
+    color: $main;
+  }
+
+
+  &--scrolled {
+    position: fixed;
+    margin: 0px;
+    background-color: $main;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    -webkit-box-shadow: 0px 12px 21px 1px rgba(50, 50, 50, 0.68);
+    -moz-box-shadow:    0px 12px 21px 1px rgba(50, 50, 50, 0.68);
+    box-shadow:         0px 12px 21px 1px rgba(50, 50, 50, 0.68);
+
+    .logo-main {
+      width: 100px;
+    }
+
+    .header__col {
+
+      .info__row {
+
+        display: inline-block;
+        color: #FFF;
+
+        margin-bottom: 15px;
+        &:last-child {
+          margin-bottom: 5px;
+        }
+
+        &__slogan {
+          display: none;
+        }
+
+        &__phone {
+          line-height: 1.5;
+          margin-left: 40px;
+          position: absolute;
+          right: 50px;
+          top: 5px;
+        }
+
+        &__email {
+          position: absolute;
+          right: 220px;
+          top: 5px;
+
+          a {
+            color: #FFF;
+          }
+        }
+
+      }
+    }
+    .form-open {
+      float: right;
+      font-size: 25px;
+      color: #FFF;
+    }
+  }
+
+}
+
+/* Small devices (tablets, 768px and up) */
+// @media (max-width: 768px) {
+// }
+
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+
+  .header {
+
+    // .header__col {
+    //
+    //   .info__row {
+    //     margin-bottom: 5px;
+    //
+    //     &-i {
+    //       margin-left: 8px;
+    //       font-size: 16px;
+    //     }
+    //
+    //     h1 {
+    //       font-size: 24px;
+    //     }
+    //   }
+    // }
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
