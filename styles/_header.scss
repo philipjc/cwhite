@@ -23,7 +23,7 @@
       .form-open {
         position: absolute;
         top: 15px;
-        right: 55px;
+        right: 0px;
       }
     }
 
@@ -72,6 +72,7 @@
 
   &--scrolled {
     position: fixed;
+    height: 60px;
     margin: 0px;
     background-color: $main;
     z-index: 1000;
@@ -87,11 +88,10 @@
     .header__col {
 
       &__logo {
-        display: none;
-      }
-
-      &__info {
-
+        width: 100px;
+        margin-top: 10px;
+        margin-left: 45px;
+        float: left;
       }
 
       &__bars {
@@ -105,12 +105,14 @@
       .info__row {
 
         display: inline-block;
-        margin-left: 10px;
+        margin-left: 15px;
+        margin-top: 15px;
         line-height: 1.5;
         color: #FFF;
+        user-select: none;
 
         &__slogan {
-          font-size: 28px;
+          display: none;
         }
 
         &__phone {
@@ -134,7 +136,40 @@
 }
 
 /* Small devices (tablets, 768px and up) */
-@media (max-width: 768px) {
+@media (max-width: 568px) {
+
+  .container {
+    padding: 10%;
+  }
+
+  .header {
+
+    &--scrolled {
+      height: 180px;
+
+      .header__col {
+
+        &__bars {
+          .form-open {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+          }
+        }
+      }
+    }
+
+    .header__col {
+
+      &__logo {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  .top-margin {
+    margin-top: 240px;
+  }
 
   .info__row__slogan {
     display: none;
@@ -144,6 +179,9 @@
 /* Medium devices (desktops, 992px and up) */
 @media (max-width: 992px) {
 
+  .container {
+    padding: 10%;
+  }
 
 }
 

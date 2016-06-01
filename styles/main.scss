@@ -1,7 +1,7 @@
 $main: lighten(#7f00ff, 10%);
 
 body {
-  font-family: 'Droid Serif', serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .hidden {
@@ -17,6 +17,7 @@ body {
 }
 
 @import './_header.scss';
+@import './_sideBar.scss';
 
 
 .info {
@@ -28,28 +29,18 @@ body {
 }
 
 
-
 .form-close {
+  margin-top: 34px;
   cursor: pointer;
   font-size: 20px;
   padding: 5px;
 }
 
-.contact-form {
-  display: block;
-  z-index: 10000;
-  background-color: $main;
-  border: 2px solid $main;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
 
-  width: 340px;
-  padding: 15px;
-  color: #fff;
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 568px) {
 
-  button {
-    margin-top: 15px;
+  .info-footer {
+    display: none;
   }
 }

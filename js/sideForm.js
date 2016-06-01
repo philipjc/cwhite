@@ -1,10 +1,8 @@
 
-class sideElement {
+export default class sideForm {
 
-  constructor(width, height) {
+  constructor() {
 
-    this.width = width;
-    this.height = height;
     this.inview = false;
 
     this.formOpenElement = document.querySelector('.form-open');
@@ -12,16 +10,17 @@ class sideElement {
     this.formContainerElement = document.querySelector('.contact-form');
 
     this.onToggleElement = this.onToggleElement.bind(this);
+    this.addEventListeners();
   }
 
-  addEventListener() {
+  addEventListeners() {
     this.formOpenElement.addEventListener('click', this.onToggleElement);
+    this.formCloseElement.addEventListener('click', this.onToggleElement);
   }
 
-  onToggleElement() {
-    this.formContainerElement.classList.toggle('contact-form--open');
+  onToggleElement(evt) {
+    this.formContainerElement.classList.toggle('hidden');
+    this.inview = !this.inview;
   }
 
 }
-
-export default sideElement;
