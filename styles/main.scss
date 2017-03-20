@@ -28,9 +28,13 @@ body {
 
 }
 
+.image-general {
+  margin-top: 28px;
+}
+
 
 .form-close {
-  margin-top: 34px;
+  margin-top: 15px;
   cursor: pointer;
   font-size: 20px;
   padding: 5px;
@@ -41,6 +45,10 @@ body {
 @media (max-width: 568px) {
 
   .info-footer {
-    display: none;
+    display: block;
+  }
+
+  .contact-form {
+    right: -8px;
   }
 }

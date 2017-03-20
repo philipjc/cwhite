@@ -144,8 +144,31 @@
 
   .header {
 
+    .header__col {
+
+      &__logo {
+        width: 120px;
+        margin-left: 15px;
+      }
+
+      .info__row {
+        &__phone {
+          display: none;
+
+        }
+        &__email {
+          display: none;
+
+        }
+        &__slogan {
+          display: none;
+        }
+      }
+
+    }
+
     &--scrolled {
-      height: 180px;
+      height: 80px;
 
       .header__col {
 
@@ -159,21 +182,12 @@
       }
     }
 
-    .header__col {
-
-      &__logo {
-        margin-left: 15px;
-      }
-    }
   }
 
   .top-margin {
     margin-top: 240px;
   }
 
-  .info__row__slogan {
-    display: none;
-  }
 }
 
 /* Medium devices (desktops, 992px and up) */
